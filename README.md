@@ -8,4 +8,5 @@ Here you can find a part of my University homework and projects, such as:
 - Web Techniques (base level HTML/CSS/JavaScript)
 - Data Structures
 
-* will be updated as time passes by
+ 
+ NOTE: will be updated as time passes by
