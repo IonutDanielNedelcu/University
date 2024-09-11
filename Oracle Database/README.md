@@ -43,10 +43,10 @@ Perform the design, implementation and procedural exploitation of a relational d
     - the use of at least 2 functions on character strings, 2 functions on calendar dates, at least one CASE expression
     - use of at least 1 request block (WITH clause)
 
-Note: A request will contain several elements from those listed above, so that the 5 requests include them all.
+    Note: A request will contain several elements from those listed above, so that the 5 requests include them all.
 
 14. Implement 3 update and delete data operations using subqueries.
 15. Creating a complex view. Give an example of a permitted LMD operation on that view and an example of a disallowed LMD operation.
 16. Formulate in natural language and implement in SQL: a request that uses the outer-join operation on at least 4 tables, a request that uses the division operation and a request that implements top-n analysis.
 
-Note: The 3 applications are different from the applications in exercise 12.
+    Note: The 3 applications are different from the applications in exercise 12.
