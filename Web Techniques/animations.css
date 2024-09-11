@@ -1,0 +1,67 @@
+.rightArticle, .leftArticle {
+    margin: 2em;
+}
+
+.rightImgAnim, .leftImgAnim {
+    grid-row: 1 / 3;
+    display: flex;
+    position: relative;
+    min-width: 250px;
+    max-width: 320px;
+    margin: 2em;
+    justify-self: center;
+    align-self: center;
+}
+
+.rightImgAnim, .leftImgAnim {
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+}
+
+.rightImgAnim:hover, .leftImgAnim:hover {
+    transform: rotateY(180deg);
+}
+
+.rightImgAnim img {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    justify-self: center;
+    align-self: center;
+    border-radius: 25% 35%;
+}
+
+.leftImgAnim img {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    justify-self: center;
+    align-self: center;
+    border-radius: 35% 25%;
+}
+
+.frontPic {
+    backface-visibility: hidden;
+}
+
+.backPic {
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+@media (max-width: 40em) {
+    .rightArticle, .leftArticle {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+    }
+
+    .rightImgAnim, .leftImgAnim, .rightHeaderAnim, .leftHeader, .rightArticleText, .leftArticleText {
+        grid-column: 1/1;
+    }
+    .rightImgAnim, .leftImgAnim {
+        grid-row: 1/2;
+        margin-top: 12em;
+        margin-bottom: 12em;
+    }
+}

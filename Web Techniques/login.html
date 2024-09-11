@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nidle - He Made It!</title>
+    <link rel="icon" href="photos/main/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img id="hLogo" src="photos/main/hLogo.png" alt="the horizontal version of the NIDLE logo"></a>
+            <div class="headerUpRight">
+                <a class="collabsA" href="collabs.html">Collaborations</a>
+                <div class="dropdown">
+                    <a class="aButton" href="#">Products</a>
+                    <div class="dropdownContent">
+                        <a href="clothing.html">Clothing</a>
+                        <a href="accessories.html">Accessories</a>
+                        <a href="plushies.html">Plushies</a>
+                    </div>
+                </div>
+                <span id="toggleDark">Mode</span>
+                <script src="toggleMode.js"></script>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div></div>
+        <section id="formSection2">            
+            <h1>Want a personalised experience?</h1>
+            <p>
+                If you want us to call you by your name, Log In!<br>
+                If not, you can still browse our products, but we won't know who you are, and you can <a href="index.html">go back to the main page.</a>
+            </p>
+            <form id="login-form">
+                <input 
+                    type="text" 
+                    name="username" 
+                    id="username"
+                    placeholder="Username"
+                    required 
+                />
+                <input 
+                    type="password" 
+                    name="password" 
+                    id="password"
+                    placeholder="Password"
+                    required
+                />
+                <button type="submit" id="submitButton">Log In</button>
+            </form>
+            <script src="login.js"></script>
+        </section>
+    </main>
+
+    <footer>
+        <section>
+            <p>You can find me on: </p>
+        <ul>
+            <li><a href="https://www.instagram.com/nidle.shop/" target="_blank"><img class="icon" src="photos/main/instagram.png" alt="Instagram Icon"> <p>Instagram</p></a></li>
+            <li><a href="mailto:thenidlecompany@gmail.com"><img class="icon" src="photos/main/gmail.png" alt="Gmail Icon"><p>Mail</p></a></li>
+            <li><a href="https://www.tiktok.com/@nidle.shop" target="_blank"><img class="icon" src="photos/main/tiktok.png" alt="TikTok Icon"><p>TikTok</p></a></li>
+        </ul>
+        </section>
+        <section id="footerSection2">
+            <img id="footerImg" src="photos/main/hLogo.png" alt="">
+            <p id="footerCopy"> Nidle © All rights reserved 2023-2024</p>
+        </section>
+    </footer>
+
+</body>
+</html>

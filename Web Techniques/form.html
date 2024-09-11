@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nidle - He Made It!</title>
+    <link rel="icon" href="photos/main/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img id="hLogo" src="photos/main/hLogo.png" alt="the horizontal version of the NIDLE logo"></a>
+            <div class="headerUpRight">
+                <a class="collabsA" href="collabs.html">Collaborations</a>
+                <div class="dropdown">
+                    <a class="aButton" href="#">Products</a>
+                    <div class="dropdownContent">
+                        <a href="clothing.html">Clothing</a>
+                        <a href="accessories.html">Accessories</a>
+                        <a href="plushies.html">Plushies</a>
+                    </div>
+                </div>
+                <span id="toggleDark">Mode</span>
+                <script src="toggleMode.js"></script>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div></div>
+        <section id="formSection">
+            <script src="form.js"></script>
+            <h1>You ask, we serve!</h1>
+            <p>Thank you for your interest in our products! <br> Please fill out the form below and we will get back to you as soon as possible.</p>
+            <form action="contact" method="post">
+                <fieldset>
+                    <legend>Tell us a bit about yourself!</legend>
+                    <div class="complete">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" size="30" required>
+                    </div>
+                    <div class="complete">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" size="30" required>
+                    </div>
+                    <div>
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" size="30">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>What are you interested in?</legend>
+                    <div class="complete">
+                        <label for="product">Your Choice:</label>
+                        <select id="product" name="product" required>
+                            <option value="styling">Styling</option>
+                            <option value="collaboration">Collaboration</option>
+                            <option value="clothing">Clothing</option>
+                            <option value="accessories">Accessories</option>
+                            <option value="plushies">Plushies</option>
+                        </select>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="data">When do you want to meet or discuss your request?</label>
+                            <input
+                              type="date"
+                              id="date"
+                              name="date"
+                              value="2024-06-07"
+                              min="2024-06-07"
+                              max="2024-12-31"
+                            />
+                          </div>
+                
+                    </div>
+                    <div>
+                        <label for="budgetForm">Budget:</label>
+                        <div id="budgetShow">
+                            <input
+                            type="range"
+                            id="budgetForm"
+                            name="credit"
+                            min="100"
+                            max="4000"
+                            value="500"
+                            step="50"
+                            list="values"
+                            />
+                            <span id="budgetSpan"><output id="budgetVal"></output></span>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="message">Want to tell us more?</label>
+                        <textarea id="message" name="message"></textarea>
+                    </div>
+                </fieldset>
+                <input type="submit" value="Submit" id="submitButton">
+            </form>
+            
+        </section>
+    </main>
+
+    <footer>
+        <section>
+            <p>You can find me on: </p>
+        <ul>
+            <li><a href="https://www.instagram.com/nidle.shop/" target="_blank"><img class="icon" src="photos/main/instagram.png" alt="Instagram Icon"> <p>Instagram</p></a></li>
+            <li><a href="mailto:thenidlecompany@gmail.com"><img class="icon" src="photos/main/gmail.png" alt="Gmail Icon"><p>Mail</p></a></li>
+            <li><a href="https://www.tiktok.com/@nidle.shop" target="_blank"><img class="icon" src="photos/main/tiktok.png" alt="TikTok Icon"><p>TikTok</p></a></li>
+        </ul>
+        </section>
+        <section id="footerSection2">
+            <img id="footerImg" src="photos/main/hLogo.png" alt="">
+            <p id="footerCopy"> Nidle © All rights reserved 2023-2024</p>
+        </section>
+    </footer>
+
+</body>
+</html>
