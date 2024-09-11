@@ -36,14 +36,15 @@ Perform the design, implementation and procedural exploitation of a relational d
 10. Creating a sequence that will be used in inserting records into the tables (point 11).
 11. Creating tables in SQL and inserting consistent data into each of them (minimum 5 records in each non-associative table; minimum 10 records in associative tables; maximum 30 records in each table).
 12. Formulate in natural language and implement 5 complex SQL requests that will use, in their entirety, the following elements: 
-    a) synchronized subrequests involving at least 3 tables
-    b) unsynchronized subrequests in the FROM clause
-    c) data groupings, group functions, filtering at group level with unsynchronized subrequests (in the HAVING clause) involving at least 3 tables (within the same request)
-    d) orders and the use of the NVL and DECODE functions (within the same request)
-    e) the use of at least 2 functions on character strings, 2 functions on calendar dates, at least one CASE expression
-    f) use of at least 1 request block (WITH clause)
-    Note: A request will contain several elements from those listed above, so that the 5 requests include them all.
+    - synchronized subrequests involving at least 3 tables
+    - unsynchronized subrequests in the FROM clause
+    - data groupings, group functions, filtering at group level with unsynchronized subrequests (in the HAVING clause) involving at least 3 tables (within the same request)
+    - orders and the use of the NVL and DECODE functions (within the same request)
+    - the use of at least 2 functions on character strings, 2 functions on calendar dates, at least one CASE expression
+    - use of at least 1 request block (WITH clause)
+Note: A request will contain several elements from those listed above, so that the 5 requests include them all.
+
 14. Implement 3 update and delete data operations using subqueries.
 15. Creating a complex view. Give an example of a permitted LMD operation on that view and an example of a disallowed LMD operation.
 16. Formulate in natural language and implement in SQL: a request that uses the outer-join operation on at least 4 tables, a request that uses the division operation and a request that implements top-n analysis.
-    Note: The 3 applications are different from the applications in exercise 12.
+Note: The 3 applications are different from the applications in exercise 12.
